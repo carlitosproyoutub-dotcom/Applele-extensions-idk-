@@ -9,12 +9,14 @@ apple {
   -webkit-text-stroke: 1px white;
   
 }
-coolicon {
+
+.coolicon {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 10%; 
 }
+
 
 }
 .box {
