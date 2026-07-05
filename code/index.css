@@ -1,1 +1,19 @@
+body {
+      background-color: #19191a;
+}
+apple {
+  text-align: center;
+  color: #bd0606;
+  font-family: Arial;
+  font-size:25;
+  -webkit-text-stroke: 1px white;
+  
+}
+coolicon {
+  display: block;
+  width: 400px;
+  max-width: 400px;
+  margin-left: 500px;     
+  margin-right: 400px;    
 
+}
