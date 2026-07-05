@@ -1,27 +1,25 @@
 (function(Scratch) {
   'use strict';
-class Extension {
-  getInfo() {
-    return {
-      id: "applele",
-    name: "Applele Utilities!",
-    color1: "#c92014",
-    color2: "#14c94e",
-    color3: "#14c94e",
-      // fun fact:i love apples
-    blocks: [
-    {
-      opcode: 'applele',
-      text: 'applele',
-      blockType: Scratch.BlockType.COMMAND
-      }
-     ],
-    };
-  }
-  applele() {
-    alert("applele");
-  }
-}
+  class Extension {
+    getInfo() {
+      return {
+        id: "applele",
+        name: "Applele Blocks",
+        blocks: [
+          {
+            opcode: 'apple',
+            // fun fact:i love apples
+            text: 'applele',
+            blockType: Scratch.BlockType.COMMAND
+          }
+        ]
+      };
+    }
 
-Scratch.extensions.register(new Extension());
+    apple() {
+      alert("applele");
+    }
+  }
+
+  Scratch.extensions.register(new Extension());
 })(Scratch);
