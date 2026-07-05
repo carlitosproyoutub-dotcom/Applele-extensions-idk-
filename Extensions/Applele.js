@@ -15,9 +15,9 @@ class Extension {
     };
   }
   applele() {
-    alert("applele")
+    alert("applele");
   }
 }
 
-Scratch.extensions.register(new applele());
+Scratch.extensions.register(new Extension());
 })(Scratch);
