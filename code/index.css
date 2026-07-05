@@ -14,8 +14,7 @@ coolicon {
   max-width: 400px;
   display: block;        
   gap: 15px;     
-  margin-left: auto;
-  margin-right: auto;
+  transform: translate(50px, -20px); 
 
 }
 textbg {
