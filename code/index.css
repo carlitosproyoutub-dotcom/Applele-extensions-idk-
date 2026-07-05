@@ -23,6 +23,8 @@ body {
   font-family:arial;
 }
 
+
+
 .gallery-toolbar {
   display: flex;
   align-items: center;
@@ -36,15 +38,18 @@ body {
   flex: 1;
   padding: 10px 16px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #555;
+  background: #2a2a2b;
+  color: #eee;
   font-size: 15px;
 }
 
 .gallery-sort {
   padding: 8px 12px;
   border-radius: 8px;
-  border: 1px solid #ccc;
-  background: #909396;
+  border: 1px solid #555;
+  background: #2a2a2b;
+  color: #eee;
   font-size: 14px;
 }
 
@@ -54,30 +59,31 @@ body {
   gap: 24px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px 60px;
+  padding: 24px 20px 60px;
 }
 
 .extension-card {
-  background: #fff;
-  border: 1px solid #e2e2e2;
+  background: #2a2a2b;
+  border: 1px solid #444;
   border-radius: 12px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.15s ease, transform 0.15s ease;
 }
 
 .extension-card:hover {
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 14px rgba(189, 6, 6, 0.35);
   transform: translateY(-2px);
+  border-color: #bd0606;
 }
 
 .extension-thumb {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-  background: #f0f0f0;
+  background: #1e1e1f;
   display: block;
 }
 
@@ -89,22 +95,15 @@ body {
 }
 
 .extension-title {
-  display: flex;
-  align-items: center;
-  gap: 6px;
   font-size: 22px;
   font-weight: 800;
   margin: 0 0 8px;
-}
-
-.extension-title .star {
-  color: #ffcc33;
-  font-size: 18px;
+  color: #eaeaea;
 }
 
 .extension-desc {
   font-size: 14.5px;
-  color: #333;
+  color: #aaa;
   line-height: 1.4;
   margin: 0 0 10px;
   flex: 1;
@@ -112,12 +111,12 @@ body {
 
 .extension-author {
   font-size: 14px;
-  color: #444;
+  color: #999;
   margin: 0 0 14px;
 }
 
 .extension-author a {
-  color: #1e88ff;
+  color: #e04b4b;
   text-decoration: none;
 }
 
@@ -138,23 +137,15 @@ body {
   font-weight: 700;
   font-size: 15px;
   cursor: pointer;
-  color: #fff;
+  color: #eee;
 }
 
-.btn-copy {
-  background: #1e90ff;
+.btn-download {
+  background: #bd0606;
 }
 
-.btn-copy:hover {
-  background: #187fe0;
-}
-
-.btn-try {
-  background: #8c52ff;
-}
-
-.btn-try:hover {
-  background: #7a3ff0;
+.btn-download:hover {
+  background: #950505;
 }
 
 .gallery-empty {
@@ -163,6 +154,3 @@ body {
   padding: 60px 20px;
   font-size: 16px;
 }
-
-
-
