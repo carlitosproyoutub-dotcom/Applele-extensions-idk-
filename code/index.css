@@ -1,5 +1,7 @@
 body {
   background-color: #19191a;
+  background-image: applele.jpeg;
+  background-repeat: repeat;
 }
 
 .apple {
@@ -9,13 +11,6 @@ body {
   -webkit-text-stroke: 1px white;
   font-family: Arial;
   background-color: #393a3b;
-}
-.coolicon {
-  display: flex;          
-  align-items: center;    
-  gap: 20px; 
-  width: 10%;           
-  height: auto;
 }
 
 .notice {
