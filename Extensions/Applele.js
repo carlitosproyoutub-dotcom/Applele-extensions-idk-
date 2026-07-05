@@ -1,21 +1,9 @@
-class applele {
-  getInfo() {
-    return {
-      id: 'applele',
-      name: 'Applele Utilities!',
-      blocks: [
-        {
-          opcode: 'appol',
-          blockType: Scratch.BlockType.REPORTER,
-          text: 'Applele!'
-        }
-      ]
-    };
-  }
-
-  appol() {
-    return 'i love apples!';
-  }
+getInfo() {
+  return {
+    id: "applele",
+    name: "Applele Utilities!",
+    color1: "#c92014",
+    color2: "#14c94e",
+    color3: "#14c94e",
+  };
 }
-
-Scratch.extensions.register(new Applele-Utilities());
