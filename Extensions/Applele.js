@@ -14,15 +14,22 @@
             // fun fact:i love apples
             text: 'applele',
             blockType: Scratch.BlockType.COMMAND
+          },
+          {
+            opcode: 'report',
+            text: 'this sprite is applele?',
+            blockType: Scratch.BlockType.BOOLEAN
           }
         ]
       };
     }
-
     apple() {
+      Scratch.Cast.Say("applele");
       alert("applele");
     }
+    report() {
+      return true;
+    }
   }
-
   Scratch.extensions.register(new Extension());
 })(Scratch);
