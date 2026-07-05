@@ -19,7 +19,7 @@ body {
   background-color: #393a3b;
 }
 .notice {
-  color: darkgray;
+  color: gray;
   font-size: 10px;
   position: absolute; 
   bottom: 0;          
