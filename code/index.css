@@ -19,3 +19,9 @@ textbg {
     background-color: #3f3f40;
     padding: 20px; 
 }
+.box {
+  background-color: #424240;
+  padding: 20px;
+  border: 2px;
+  border-radius: 8px;
+}
