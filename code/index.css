@@ -10,14 +10,11 @@ apple {
   
 }
 coolicon {
-  width: 400px;
-  max-width: 400px;
-  height: auto;
-  display: block;        
-  gap: 15px;
-  left: 1000px; /* ive been having SOOOO MUCH FUCKING TROUBLE JUST FOR THE CORDINATES LIKE UGHHHHHHHHHH */
-  top: 0px; 
-
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; /* Optional: Adjust the size so it doesn't take the full screen width */
+}
 
 }
 textbg {
