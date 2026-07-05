@@ -5,7 +5,6 @@
     constructor() {
       this.appol = "false";
     }
-
     getInfo() {
       return {
         id: "applele",
@@ -27,7 +26,7 @@
             blockType: Scratch.BlockType.BOOLEAN
           },
           {
-
+            opcode: 'stt',
             text: 'Become applele [APP]',
             blockType: Scratch.BlockType.COMMAND,
             arguments: {
@@ -57,9 +56,7 @@
       this.appol = args.APP === true ? "true" : "false";
     }
     when() {
-      if (this.appol === "true") {
       this.appol === "true";
-      }
     }
   }
   Scratch.extensions.register(new Extension());
