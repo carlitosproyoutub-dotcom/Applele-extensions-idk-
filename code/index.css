@@ -1,13 +1,13 @@
 body {
-      background-color: #19191a;
+  background-color: #19191a;
 }
-apple {
+
+.apple {
   text-align: center;
   color: #bd0606;
   font-family: Arial;
-  font-size:25;
+  font-size: 25px; 
   -webkit-text-stroke: 1px white;
-  
 }
 
 .coolicon {
@@ -17,11 +17,9 @@ apple {
   width: 20%; 
 }
 
-
-}
 .box {
-  background-color: #424240;
+  background-color: #424242;
   padding: 20px;
-  border: 2px;
+  border: 2px solid #bd0606; 
   border-radius: 8px;
 }
