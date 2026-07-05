@@ -27,7 +27,7 @@
             blockType: Scratch.BlockType.BOOLEAN
           },
           {
-            opcode: 'stt',
+
             text: 'Become applele [APP]',
             blockType: Scratch.BlockType.COMMAND,
             arguments: {
@@ -58,7 +58,7 @@
     }
     when() {
       if (this.appol === "true") {
-      return this.appol === "true";
+      this.appol === "true";
       }
     }
   }
