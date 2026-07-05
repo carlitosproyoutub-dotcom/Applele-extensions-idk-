@@ -24,7 +24,7 @@
       };
     }
     apple() {
-      Scratch.Cast.Say("applele");
+      util.target.setSayText("applele")
       alert("applele");
     }
     report() {
