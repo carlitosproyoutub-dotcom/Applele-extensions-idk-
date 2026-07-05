@@ -10,6 +10,13 @@ body {
   font-family: Arial;
   background-color: #393a3b;
 }
+.coolicon {
+  display: flex;          
+  align-items: center;    
+  gap: 20px; 
+  width: 10%;           
+  height: auto;
+}
 
 .notice {
   color: gray;
