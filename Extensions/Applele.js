@@ -18,3 +18,6 @@ class Extension {
     alert("applele")
   }
 }
+
+Scratch.extensions.register(new applele());
+})(Scratch);
