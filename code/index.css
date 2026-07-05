@@ -1,11 +1,11 @@
 body {
   background-color: #19191a;
+  font-family: Arial;
 }
 
 .apple {
   text-align: center;
   color: #bd0606;
-  font-family: Arial;
   font-size: 25px; 
   -webkit-text-stroke: 1px white;
 }
