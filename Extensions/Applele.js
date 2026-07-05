@@ -1,3 +1,4 @@
+class Extension {
 getInfo() {
   return {
     id: "applele",
@@ -6,4 +7,5 @@ getInfo() {
     color2: "#14c94e",
     color3: "#14c94e",
   };
+}
 }
