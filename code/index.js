@@ -1,4 +1,4 @@
-const GALLERY_JSON_PATH = "extensions.json";
+const GALLERY_JSON_PATH = "code/extensions.json";
 
 let allExtensions = [];
 
