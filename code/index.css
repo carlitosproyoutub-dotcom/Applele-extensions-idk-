@@ -1,6 +1,5 @@
 body {
   background-color: #19191a;
-  font-family: Arial;
 }
 
 .apple {
@@ -8,6 +7,8 @@ body {
   color: #bd0606;
   font-size: 25px; 
   -webkit-text-stroke: 1px white;
+  font-family: Arial;
+  background-color: darkgray;
 }
 
 .coolicon {
