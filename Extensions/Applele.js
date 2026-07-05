@@ -1,5 +1,6 @@
 (function(Scratch) {
   'use strict';
+  const blocksIcon = "https://cdn.phototourl.com/free/2026-07-05-db18e682-8ef5-4827-aee3-0030f7b5dad0.png"
   class Extension {
     getInfo() {
       return {
@@ -8,6 +9,8 @@
         color1: "#ff0000",
         color2: "#00ff00",
         color3: "#00ff00",
+        menuIconURI: blocksIcon,
+        blockIconURI: blocksIcon,
         blocks: [
           {
             opcode: 'apple',
@@ -24,7 +27,7 @@
       };
     }
     apple() {
-      util.target.sprite.say("applele", util.target);
+      alert("Applele")
     
     }
     report() {
