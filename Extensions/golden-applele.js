@@ -106,7 +106,7 @@
             text: 'shop items',
             blockType: Scratch.BlockType.REPORTER,
             disableMonitor: true
-            Scratch.BlockShape.SQUARE
+            BlockShape: Scratch.BlockShape.SQUARE,
           }
         ]
       };
