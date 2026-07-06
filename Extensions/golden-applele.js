@@ -90,6 +90,11 @@
             opcode: 'work',
             text: 'work',
             blockType: Scratch.BlockType.COMMAND,
+          },
+          {
+            opcode: 'crime',
+            text: 'crime',
+            blockType: Scratch.BlockType.COMMAND,
           }
         ]
       };
@@ -123,6 +128,9 @@
     }
     work() {
       this.moneyValue += Math.floor(Math.random() * (100 - 1 + 1)) + 1;
+    }
+    crime() {
+      this.moneyValue += Math.floor(Math.random() * 2001) - 1000;
     }
   }
   Scratch.extensions.register(new Extension());
