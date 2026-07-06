@@ -49,6 +49,10 @@
                 type: Scratch.ArgumentType.NUMBER
               }
             }
+          },
+          {
+            text: 'BANK blocks:',
+            blockType: Scratch.BlockType.LABEL
           }
         ]
       };
