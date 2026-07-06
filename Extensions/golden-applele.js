@@ -28,7 +28,7 @@
           },
           {
             opcode: 'money',
-            text: 'Money',
+            text: 'Balance',
             blockType: Scratch.BlockType.REPORTER
           },
           {
@@ -69,6 +69,16 @@
                 type: Scratch.ArgumentType.NUMBER
                 }
               }
+          },
+          {
+            opcode: 'with',
+            text: 'withdraw [WITHS] money from bank to balance',
+            blockType: Scratch.BlockType.COMMAND,
+            arguments: {
+              WITHS: {
+                type: Scratch.ArgumentType.NUMBER
+              }
+            }
           }
           
         ]
@@ -90,10 +100,14 @@
       return this.bankValue;
     }
     dep(args) {
-      if (this.moneyValue ≥ Number(args.DEPS)) {
+      if (this.moneyValue > Number(args.DEPS) - 1) {
         this.moneyValue -= Number(args.DEPS);
         this.bankValue += Number(args.DEPS);
         }
+    }
+    with(args) {
+      this.bankValue -= Number(args.WITHS);
+      this.moneyValue += Number(args.WITHS);
     }
   }
   Scratch.extensions.register(new Extension());
