@@ -1,7 +1,7 @@
 (function(Scratch) {
   'use strict';
   const blocksIcon = "https://i.postimg.cc/tTZRVXnj/Untitled-07-05-2026-11-18-50.png";
-  class Extension {
+  class Extension { 
     constructor() {
       this.moneyValue = 0;
       this.bankValue = 0;
