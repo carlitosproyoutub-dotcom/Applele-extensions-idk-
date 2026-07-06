@@ -83,8 +83,6 @@
           },
           {
             text: 'Gaining Money :^',
-            // why would anyone even need this? idk man 😭 im still adding it tho
-            // what the fuck why am i talking to myself
             blockType: Scratch.BlockType.LABEL
           },
           {
@@ -105,8 +103,8 @@
             opcode: 'shopit',
             text: 'shop items',
             blockType: Scratch.BlockType.REPORTER,
-            disableMonitor: true
-            BlockShape: Scratch.BlockShape.SQUARE,
+            disableMonitor: true,
+            blockShape: Scratch.BlockShape.SQUARE
           }
         ]
       };
@@ -145,7 +143,7 @@
       this.moneyValue += Math.floor(Math.random() * 2001) - 1000;
     }
     shopit() {
-      return this.shop
+      return this.shop;
     }
   }
   Scratch.extensions.register(new Extension());
