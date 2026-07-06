@@ -37,18 +37,17 @@
             arguments: {
               NUNB: {
                 type: Scratch.ArgumentType.NUMBER
-             },
-             {
-               opcode: 'cenr',
-              text: 'add [CENT] cents',
-              blockType: Scratch.BlockType.COMMAND,
-              arguments: {
-                CENT: {
-                type: Scratch.ArgumentType.NUMBER
-                }
               }
-             }
-            
+            }
+          },
+          {
+            opcode: 'cenr',
+            text: 'add [CENT] cents',
+            blockType: Scratch.BlockType.COMMAND,
+            arguments: {
+              CENT: {
+                type: Scratch.ArgumentType.NUMBER
+              }
             }
           }
         ]
@@ -64,7 +63,7 @@
       this.moneyValue = Number(args.NUNB);
     }
     cenr(args) {
-      this.moneyValue += Number(args.MON) / 10;
+      this.moneyValue += Number(args.CENT) / 100;
     }
   }
   Scratch.extensions.register(new Extension());
