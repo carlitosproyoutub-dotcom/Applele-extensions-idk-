@@ -24,6 +24,16 @@
               opcode: 'money',
               text: 'Money',
               blockType: Scratch.BlockType.REPORTER,
+             },
+             {
+              opcode: 'sets',
+              text: 'Set [NUNB]',
+              blockType: Scratch.BlockType.COMMAND,
+              arguments: {
+                NUNB: {
+                  type: Scratch.ArgumentType.NUMBER
+                }
+             }
           }
         ]
       };
@@ -33,6 +43,9 @@
     }
     money() {
       return this.money
+    }
+    sets(args) {
+      this.money == Number(args.NUNB);
     }
   }
   Scratch.extensions.register(new Extension());
