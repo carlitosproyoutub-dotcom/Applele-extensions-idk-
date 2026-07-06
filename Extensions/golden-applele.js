@@ -90,7 +90,7 @@
       return this.bankValue;
     }
     dep(args) {
-      if (this.moneyValue > Number(args.DEPS); {
+      if (this.moneyValue > Number(args.DEPS)) {
         this.moneyValue -= Number(args.DEPS);
         this.bankValue += Number(args.DEPS);
         }
