@@ -136,6 +136,16 @@
           blockType: Scratch.BlockType.REPORTER,
           disableMonitor: true,
           blockShape: Scratch.BlockShape.SQUARE
+        },
+        {
+          opcode: 'clearshop',
+          text: 'clear shop',
+          blockType: Scratch.BlockType.COMMAND
+        },
+        {
+          opcode: 'clearowned',
+          text: 'clear owned',
+          blockType: Scratch.BlockType.COMMAND
         }
         ]
       };
@@ -184,7 +194,7 @@
     }
     buyItem(args) {
      const item = this.shop.find(i => i.name === args.ITEMNAME);
-     if (!item) return; // item doesn't exist in shop
+     if (!item) return; 
      if (item.price <= this.moneyValue) {
       this.moneyValue -= item.price;
       this.owned.push(item);
@@ -192,6 +202,12 @@
    }
      own() {
       return JSON.stringify(this.owned);
+    }
+    clearshop() {
+      this.shop = [];
+    }
+    clearowned() {
+      this.owned = [];
     }
   }
   Scratch.extensions.register(new Extension());
