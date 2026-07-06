@@ -2,10 +2,10 @@
   {
     "name": "Applele Blocks",
     "description": "Simple Applele Blocks.",
-    "image": "applele.png",
+    "image": "banners/applele.png",
     "author": "Dimix",
     "authorLink": "https://github.com/Dimixixixiixix",
-    "link": "Applele.js",
+    "link": "Extensions/Applele.js",
     "featured": true
   }
 ]
