@@ -34,5 +34,15 @@
     "authorLink": "https://github.com/Dimixixixiixix",
     "link": "Extensions/joe.js",
     "featured": false
+  },
+  {
+  "name": "Green-Applele Shops",
+    "description": "A better version of the Golden-Applele Extension, make shops",
+    "image": "banners/green-applele.png",
+    "author": "Dimix", 
+    "authorLink": "https://github.com/Dimixixixiixix",
+    "link": "Extensions/green-applele.js",
+    "featured": true
   }
+  
 ]
