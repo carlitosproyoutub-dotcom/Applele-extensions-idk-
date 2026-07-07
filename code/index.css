@@ -11,6 +11,9 @@ body {
   -webkit-text-stroke: 1px white;
   font-family: Arial;
   background-color: #393a3b;
+  top: 0;
+  z-index: 9999;
+  position: fixed;
 }
 
 .notice {
