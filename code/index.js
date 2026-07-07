@@ -39,10 +39,18 @@ function buildCard(ext) {
           : escapeHtml(ext.author || "Unknown")}.
       </p>
       <div class="extension-actions">
+        <button class="btn btn-try" data-link="${escapeHtml(ext.link || "")}">Try it Out</button>
         <button class="btn btn-download" data-link="${escapeHtml(ext.link || "")}" data-name="${escapeHtml(ext.name || "extension")}">Download</button>
       </div>
     </div>
   `;
+
+  card.querySelector(".btn-try").addEventListener("click", (e) => {
+    const link = e.currentTarget.dataset.link;
+    if (!link) return;
+    const editorUrl = "https://studio.penguinmod.com/editor.html?extension=" + encodeURIComponent(link);
+    window.open(editorUrl, "_blank", "noopener");
+  });
 
   card.querySelector(".btn-download").addEventListener("click", async (e) => {
     const btn = e.currentTarget;
