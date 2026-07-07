@@ -50,7 +50,7 @@ function buildCard(ext) {
     const rawLink = btn.dataset.link;
     if (!rawLink) return;
 
-    // Always resolve to a full absolute URL, exactly like extensions.turbowarp.org does
+   p
     const absoluteLink = new URL(rawLink, window.location.href).href;
     const original = btn.textContent;
 
