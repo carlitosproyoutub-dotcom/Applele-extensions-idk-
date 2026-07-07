@@ -20,7 +20,7 @@ body {
   color: gray;
   font-size: 10px;
   position: absolute;
-  bottom: 20px;
+  bottom: auto;
   left: 20px;
   z-index: 9990;
   margin: 0;
