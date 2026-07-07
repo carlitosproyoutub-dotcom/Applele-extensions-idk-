@@ -17,8 +17,13 @@ on the extension like change the link to the name of your extension (make sure t
 Then do the same with the banner, change it to the path of your banner (make sure to begin with Banners/)
 When you are done just wait if i accept it!
 
-# Rules
-1: No AI generated extensions
-2: extensions made with turbobuilder or Extforge are accepted BUT they are more likely to not be accepted and if accepted they will have a tag of possible low quality
-3: Joke extensions are accepted BUT they need to have a use and not be just 1 block with no use
-4: Please check for extensions that already exist and avoid to replicate them
+# Rule 1
+No AI generated extensions
+# Rule 2
+extensions made with turbobuilder or Extforge are accepted BUT they are more likely to not be accepted and if accepted they will have a tag of possible low quality
+# Rule 3
+Joke extensions are accepted BUT they need to have a use and not be just 1 block with no use
+# Rule 4
+Please check for extensions that already exist and avoid to replicate them
+# Rule 5 
+if you want to get your extension accepted please also make it SFW
