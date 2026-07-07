@@ -48,7 +48,7 @@ function buildCard(ext) {
   card.querySelector(".btn-try").addEventListener("click", (e) => {
     const link = e.currentTarget.dataset.link;
     if (!link) return;
-    const editorUrl = "https://studio.penguinmod.com/editor.html?extension=" + encodeURIComponent(link);
+    const editorUrl = "https://studio.penguinmod.com/editor.html?extension=" + link;
     window.open(editorUrl, "_blank", "noopener");
   });
 
