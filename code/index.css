@@ -16,7 +16,7 @@ body {
 .notice {
   color: gray;
   font-size: 10px;
-  position: fixed;
+  position: absolute;
   bottom: 20px;
   left: 20px;
   z-index: 9990;
