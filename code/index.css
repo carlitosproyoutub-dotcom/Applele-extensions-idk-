@@ -5,6 +5,7 @@ body {
 }
 
 .apple {
+  position: fixed;
   text-align: center;
   color: #bd0606;
   font-size: 20px;
@@ -14,7 +15,6 @@ body {
   top: 0;
   left: 0;
   z-index: 99999;
-  position: fixed;
   padding: 10px 0;
 }
 
