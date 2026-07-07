@@ -1,5 +1,5 @@
 const GALLERY_JSON_PATH = "code/extensions.json";
-let allExtensions = [];  
+let allExtensions = [];   
 
 async function loadExtensions() {
   const grid = document.getElementById("extension-grid");
