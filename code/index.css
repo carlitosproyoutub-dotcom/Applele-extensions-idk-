@@ -5,22 +5,20 @@ body {
 }
 
 .apple {
-  position: fixed;
+  position: absolute;
   text-align: center;
   color: #bd0606;
   font-size: 20px;
   -webkit-text-stroke: 1px white;
   font-family: Arial;
   background-color: #393a3b;
-  top: 0;
-  z-index: 99999;
 }
 
 .notice {
   color: gray;
   font-size: 10px;
-  position: absolute;
-  bottom: auto;
+  position: fixed;
+  bottom: 20px;
   left: 20px;
   z-index: 9990;
   margin: 0;
