@@ -123,7 +123,7 @@
           {
             opcode: 'defaulteams',
             blockType: Scratch.BlockType.REPORTER,
-            text: 'default teams (all the teams with scores)'
+            text: 'default teams (all the teams with ratings)'
           }
         ]
       };
