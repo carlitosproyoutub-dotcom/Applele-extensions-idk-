@@ -2,6 +2,7 @@
   'use strict';
 
   const API_BASE = 'https://generativelanguage.googleapis.com/v1beta/models';
+  const blocksIcon = "https://i.postimg.cc/vZ5LqnfX/Untitled-07-10-2026-08-37-39.png"
 
   class Extension {
     constructor() {
@@ -20,6 +21,7 @@
         color1: '#616161',
         color2: '#2d2e2e',
         color3: '#5696fc',
+        blocksIconURI: blocksIcon,
         docsURI: 'https://ai.google.dev',
         blocks: [
           {
