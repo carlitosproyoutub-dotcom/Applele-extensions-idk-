@@ -40,10 +40,10 @@ function buildCard(ext) {
       </p>
       <div class="extension-actions">
         <button class="btn btn-download" data-link="${escapeHtml(ext.link || "")}" data-name="${escapeHtml(ext.name || "extension")}">Download</button>
+        <button class="btn btn-copy" data-link="${escapeHtml(ext.link || "")}">Copy Link</button>
       </div>
     </div>
   `;
-
   card.querySelector(".btn-download").addEventListener("click", async (e) => {
     const btn = e.currentTarget;
     const link = btn.dataset.link;
@@ -66,6 +66,35 @@ function buildCard(ext) {
     } catch (err) {
       window.open(link, "_blank");
       btn.textContent = original;
+    } finally {
+      setTimeout(function () {
+        btn.textContent = original;
+      }, 1500);
+    }
+  });
+
+  card.querySelector(".btn-copy").addEventListener("click", async (e) => {
+    const btn = e.currentTarget;
+    const link = btn.dataset.link;
+    const original = btn.textContent;
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(link);
+      } else {
+        // Fallback for older/insecure contexts
+        const textarea = document.createElement("textarea");
+        textarea.value = link;
+        textarea.style.position = "fixed";
+        textarea.style.opacity = "0";
+        document.body.appendChild(textarea);
+        textarea.focus();
+        textarea.select();
+        document.execCommand("copy");
+        textarea.remove();
+      }
+      btn.textContent = "Copied!";
+    } catch (err) {
+      btn.textContent = "Failed to copy";
     } finally {
       setTimeout(function () {
         btn.textContent = original;
