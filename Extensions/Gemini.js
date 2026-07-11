@@ -7,7 +7,7 @@
   class Extension {
     constructor() {
       this.apiKey = '';
-      this.model = 'gemini-2.5-flash';
+      this.model = 'gemini-flash-lite-latest';
       this.systemInstruction = '';
       this.history = []; 
       this.lastResponse = '';
@@ -21,7 +21,7 @@
         color1: '#616161',
         color2: '#2d2e2e',
         color3: '#5696fc',
-        blocksIconURI: blocksIcon,
+        blockIconURI: blocksIcon,
         docsURI: 'https://ai.google.dev',
         blocks: [
           {
