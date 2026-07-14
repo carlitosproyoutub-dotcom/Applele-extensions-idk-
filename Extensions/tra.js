@@ -1,15 +1,17 @@
 (function (Scratch) {
   'use strict';
 
-  class AppleleTranslation {
+  class Extension {
     constructor() {
       this.dictionary = {};
+      this.blockIconURI = "https://i.postimg.cc/tgq4Xyx0/Untitled-07-13-2026-11-20-30.png";
     }
 
     getInfo() {
       return {
         id: 'chipsahoy',
         name: 'Applele Translations',
+        blockIconURI: this.blockIconURI,
         color1: '#1059e0',
         color2: '#1089e0',
         color3: '#c3d9e8',
@@ -138,5 +140,5 @@
     }
   }
 
-  Scratch.extensions.register(new AppleleTranslation());
+  Scratch.extensions.register(new Extension());
 })(Scratch);
